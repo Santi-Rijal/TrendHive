@@ -15,6 +15,7 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
@@ -22,6 +23,7 @@ const Navbar = () => {
   return (
     <nav className="p-4 flex items-center justify-between">
       {/* LEFT */}
+      <SidebarTrigger className="cursor-pointer " />
 
       {/* RIGHT */}
       <div className="flex items-center gap-4">
